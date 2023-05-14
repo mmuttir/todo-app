@@ -3,9 +3,10 @@
 This is a simple Todo application with both frontend and backend. You can run this project either directly on your machine or using Docker.
 
 ## Prerequisites
-
 - Node.js (https://nodejs.org/)
 - Docker (https://www.docker.com/) (if you plan to use Docker)
+- A running instance of MongoDB (if you donot plan to use Docker)
+- Make sure that port 3000, 5000, and 27017 are not used by any application. If you are planning to run without Docker, port 27017 should be used MongoDB.
 - Moesif CORS extension for Google Chrome (https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc) 
 
 ## Setup
