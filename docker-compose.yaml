@@ -1,0 +1,28 @@
+version: "3.8"
+services:
+  todo-app:
+    image: mutti11/todo-app
+    ports:
+      - "3000:80"
+    depends_on:
+      - todo-api
+
+  todo-api:
+    image: mutti11/todo-api
+    ports:
+      - "5000:5000"
+    environment:
+      - APP_URL=http://172.17.0.1
+      - DATABASE_URL=mongodb://mongo:27017/todoDB
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo
+    volumes:
+      - mongo-data:/data/db
+    ports:
+      - "27017:27017"
+
+volumes:
+  mongo-data:
