@@ -1,0 +1,76 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+*:focus {
+  border-color: none !important;
+  box-shadow: none !important;
+}
+body {
+  background-image: url("golden_gate.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#root {
+  background-color: rgba(163, 151, 122, 0.6);
+  background-blend-mode: multiply;
+}
+.todo-input {
+  margin-top: 25vh;
+}
+.todo-items {
+  flex-direction: row;
+}
+
+.right {
+  float: right;
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.rounded-checkbox input {
+  border-radius: 50% !important;
+  margin-right: 10px;
+  border-color: #a3977a !important;
+  cursor: pointer !important;
+}
+.rounded-checkbox input:checked {
+  background-color: #a3977a !important;
+}
+
+.todo-body-list {
+  padding: 0 !important;
+  margin-top: 10px;
+}
+
+.todo-body-list-card {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.accordion-header {
+  /* background-color: rgba(163, 151, 122, 0.7) !important; */
+  /* border: none !important; */
+  border-radius: var(--bs-card-inner-border-radius) !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+}
+.accordion-header button {
+  color: white !important;
+  background-color: transparent !important;
+  font-weight: 500 !important;
+}
+.accordion-collapse {
+  background-color: none !important;
+}
+
+.add-button {
+  background-color: #a3977a !important;
+  border-color: #a3977a !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
