@@ -3,23 +3,24 @@
 This is a simple Todo application with both frontend and backend. You can run this project either directly on your machine or using Docker.
 
 ## Prerequisites
+
 - Node.js (https://nodejs.org/)
 - Docker (https://www.docker.com/) (if you plan to use Docker)
 - A running instance of MongoDB (if you donot plan to use Docker)
 - Make sure that port 3000, 5000, and 27017 are not used by any application. If you are planning to run without Docker, port 27017 should be used MongoDB.
-- Moesif CORS extension for Google Chrome (https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc) 
+- Moesif CORS extension for Google Chrome (https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc)
 
 ## Setup
 
 ### Running on your machine
 
-1. Navigate to both `todo-api` and `todo-app` directories in separate terminal windows.
+1. Navigate to both `api` and `app` directories in separate terminal windows.
 
 2. In each directory, run `npm install` to install necessary dependencies.
 
-3. In the `todo-api` directory, start the backend server with `npm start`.
+3. In the `api` directory, start the backend server with `npm start`.
 
-4. In the `todo-app` directory, start the frontend with `npm start`.
+4. In the `app` directory, start the frontend with `npm start`.
 
 5. Ensure the Moesif CORS extension is installed and enabled in your Google Chrome browser.
 
